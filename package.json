@@ -1,0 +1,66 @@
+{
+	"name": "n8n-nodes-rowfeed",
+	"version": "0.1.1",
+	"description": "n8n node for Rowfeed's Apify Actors: keyword search volume (also bulk), Google Maps leads, website contacts, company enrichment, Impressum data, SERP, backlinks, DA/PA, site audit, website traffic, Google reviews, YouTube transcripts.",
+	"license": "MIT",
+	"homepage": "https://apify.com/rowfeed",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"apify",
+		"seo",
+		"keyword search volume",
+		"keyword research",
+		"google maps",
+		"lead generation",
+		"email extractor",
+		"company enrichment",
+		"serp",
+		"backlinks",
+		"domain authority",
+		"site audit",
+		"website traffic",
+		"impressum",
+		"youtube transcript"
+	],
+	"author": {
+		"name": "Rowfeed",
+		"email": "254184432+kristerkb-pixel@users.noreply.github.com"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/RowfeedApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Rowfeed/Rowfeed.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.58.5",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kristerkb-pixel/n8n-nodes-rowfeed.git"
+	}
+}
