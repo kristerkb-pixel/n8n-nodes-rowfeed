@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-rowfeed",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "n8n node for Rowfeed's Apify Actors: keyword search volume (also bulk), Google Maps leads, website contacts, company enrichment, Impressum data, SERP, backlinks, DA/PA, site audit, website traffic, Google reviews, YouTube transcripts.",
 	"license": "MIT",
 	"homepage": "https://apify.com/rowfeed",
